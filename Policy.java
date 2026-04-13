@@ -192,7 +192,7 @@ public class Policy
 
         double bmi = calcBMI();
         if (bmi > 35){
-            price += 200.00;
+            price += (bmi - 35) * 20;
         }
 
         return price;
